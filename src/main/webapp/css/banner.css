@@ -1,0 +1,7 @@
+.baner {
+    height: 50em;
+    background-size: cover; /* Đảm bảo hình ảnh phủ toàn bộ khu vực */
+    background-position: center; /* Căn giữa hình ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    z-index: 50;
+}

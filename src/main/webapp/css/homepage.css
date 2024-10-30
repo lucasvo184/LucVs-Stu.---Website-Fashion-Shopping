@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    /* position: fixed; */
+    width: 100%;
+    padding: 0 249px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+header ul li:last-child{
+    margin-right: 0;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #5c5470;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    color: black;
+}
+
+.logo{
+    font-size: 32px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    left: 0;
+}
+
+/*Drop menu*/
+header ul .drop-menu{
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+
+header ul li:hover .drop-menu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+header ul .drop-menu li {
+    margin: 0;
+    width: 100%;
+}
+
+header ul .drop-menu li a {
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-login {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff;
+    width: 100%px;
+    padding: 6px;
+    text-align: right;
+    text-decoration: none;
+    transform: uppercase;
+    color: #5c5470;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #34303d;
+    color: #fff;
+    font-size: 12px;
+    border-color: #fff;
+}
+
+.btn-cart {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    width: 100%px;
+    padding: 6px;
+    text-align: right;
+    text-decoration: none;
+    transform: uppercase;
+    color: #5c5470;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    color: #000;
+    font-size: 16px;
+    border-color: #fff;
+}
+
+.divider {
+    border-top: 2px solid #5c5470;
+}
+
